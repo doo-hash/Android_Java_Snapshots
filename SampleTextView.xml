@@ -1,0 +1,50 @@
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".ClassName"
+        android:background="@color/app_background"
+        android:id="@+id/content_layout"
+        android:paddingBottom="36dp"
+        >
+
+      //Includes
+      //layout_width="match_parent": Will stretch to fill the entire width of its parent container.
+      //layout_height="wrap_content":  Will adjust dynamically to fit its content.
+      //margin: Seperates from other elements
+      //padding: Ensures text does not touch the edges
+      //textColor="@color/onBackground": Defines the text color using a color resource.
+      //textSize="14sp": Sets the text size to 14sp (scalable pixels).
+      //fontFamily="@font/inknut_antiqua_regular": Sets a custom font from the res/font/ directory. The font file inknut_antiqua_regular.ttf should be placed in res/font/.
+      //letterSpacing="0.02": Adds slight spacing (2% of the default spacing) between characters for better readability.
+      //lineHeight="25dp"(Requires API 28 or above): Ensures each line of text has a minimum height of 25dp, improving readability.
+      //autoSizeTextType="uniform": Enables automatic text resizing while maintaining uniform scaling to fit within the view.
+      //elegantTextHeight="true": Optimizes text rendering, making it visually appealing by properly adjusting the height of characters, especially in complex scripts (useful for languages like Arabic, Devanagari, etc.).
+      //gravity="start": Aligns the text to the start (left for LTR languages, right for RTL languages).
+      //justificationMode="inter_word" (Requires API 26 or above): Justifies the text by adding space between words instead of characters, creating a cleaner paragraph alignment.
+      //tools:targetApi="p": Specifies that this layout preview should target API level P (Android 9.0, API 28) when viewed in Android Studio.
+
+      <TextView
+            android:id="@+id/content_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
+            android:layout_marginTop="24dp"
+            android:autoSizeTextType="uniform"
+            android:elegantTextHeight="true"
+            android:fontFamily="@font/inknut_antiqua_regular"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:letterSpacing="0.02"
+            android:lineHeight="25dp"
+            android:paddingHorizontal="8dp"
+            android:text="@string/about_us_content_one"
+            android:textColor="@color/onBackground"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:targetApi="p" />
+          </androidx.constraintlayout.widget.ConstraintLayout>
